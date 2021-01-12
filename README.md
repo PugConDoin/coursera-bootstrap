@@ -4,11 +4,13 @@
 
 - Setup git on local machine using command line interface
 - Setup development environment
-- Initate local git repository
+- Initiate local git repository
 - Mirror to online repository
 - Setup Node.js
 - Setup NPM
 - Node and NPM Basics
+- Setup a project package.json to define dependencies and versions
+- Using npm to install node modules, such as lite-server
 
 ## Resources
 
