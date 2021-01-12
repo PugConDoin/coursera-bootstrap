@@ -1,6 +1,6 @@
 # Coursera Front-End Web UI Frameworks and Tools: Bootstrap
 
-## Week 1 Practical Exercises
+## Week 1 Exercises
 
 - Setup git on local machine using command line interface
 - Setup development environment
@@ -38,3 +38,9 @@ Links to official sites and useful resources:
 Lite-server is a lightweight developmebt only node server that serves a web app, opens it in the browser and hot refreshes when html or javascript files change, injects CSS changes using sockets, and has a fallback page when a route is not found.
 
 - https://github.com/johnpapa/lite-server
+
+**Bootstrap**
+
+- Download Bootstrap using NPM and include it in your project
+- Understand how to set up a web project to use Bootstrap
+- Include the Bootstrap CSS and JS classes into a web page
