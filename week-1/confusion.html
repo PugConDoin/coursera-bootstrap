@@ -18,10 +18,13 @@
   </head>
 
   <body>
-    <header>
-      <div>
-        <div>
-          <div>
+    <header class="jumbotron">
+      <!-- Bootstrap class for ourHero section -->
+      <div class="container">
+        <!-- Contain hero content inside fixed width container -->
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <!-- col-12 = entire width on xs screens // col-sm-6 = half-width on sm screens and above -->
             <h1>Ristorante con Fusion</h1>
             <p>
               We take inspiration from the World's best cuisines, and create a
@@ -29,17 +32,27 @@
               your culinary senses!
             </p>
           </div>
-          <div></div>
+          <div class="col-12 col-sm-6"></div>
+          <!-- col-12 = full width on xs screens *stacks row content* // col-sm = take remaining space in row and auto-size on larger screen sizes  -->
         </div>
+        <!-- end row -->
       </div>
+      <!-- end container -->
     </header>
+    <!-- end container -- jumbotron -->
 
-    <div>
-      <div>
-        <div>
+    <div class="container">
+      <!-- Bootsrap container with fixed width with 12 auto columns -->
+      <div class="row">
+        <!-- Row 1/3 in this div -->
+        <div class="col-12 col-sm-4 order-sm-last col-md-3">
+          <!-- xs screens = full width, sm = 1/3 width, and md = 1/4 width -->
+          <!-- order-sm-last sets the preferred order for this column in the row and so pushes content to >>>right side -->
           <h3>Our Lipsmacking Culinary Creations</h3>
         </div>
-        <div>
+        <div class="col col-sm order-sm-first col-md">
+          <!-- col = stacks in xs screens, col-sm and col-md sets content alongside first div inrow and auto sizes to remaining space based onscreensize -->
+          <!-- order-sm-first sets order, <<<left side -->
           <h2>Uthappizza</h2>
           <p>
             A unique combination of Indian Uthappam (pancake) and Italian pizza,
@@ -48,12 +61,14 @@
           </p>
         </div>
       </div>
+      <!-- end row 1 -->
 
-      <div>
-        <div>
+      <div class="row">
+        <!-- Row 2/3 in this div -->
+        <div class="col-12 col-sm-4 col-md-3">
           <h3>This Month's Promotions</h3>
         </div>
-        <div>
+        <div class="col col-sm col-md">
           <h2>Weekend Grand Buffet</h2>
           <p>
             Featuring mouthwatering combinations with a choice of five different
@@ -63,12 +78,14 @@
           </p>
         </div>
       </div>
+      <!-- end row 2 -->
 
-      <div>
-        <div>
+      <div class="row">
+        <!-- Row 3/3 in this div -->
+        <div class="col-12 col-sm-4 order-sm-last col-md-3">
           <h3>Meet our Culinary Specialists</h3>
         </div>
-        <div>
+        <div class="col col-sm order-sm-first col-md">
           <h2>Alberto Somayya</h2>
           <h4>Executive Chef</h4>
           <p>
@@ -79,12 +96,17 @@
           </p>
         </div>
       </div>
+      <!-- end row 3 -->
     </div>
+    <!-- end container -- main content -->
 
     <footer>
-      <div>
-        <div>
-          <div>
+      <div class="container">
+        <!-- Bootsrap container with fixed width with 12 auto columns-->
+        <div class="row">
+          <!-- footer div > row 1/2 -->
+          <div class="col-4 offset-1 col-sm-2">
+            <!-- offset-1 uses the spare col in this row to offset the content by that 1 col, from xs screen size all the way up -->
             <h5>Links</h5>
             <ul>
               <li><a href="#">Home</a></li>
@@ -93,7 +115,7 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div>
+          <div class="col-7 col-sm-5">
             <h5>Our Address</h5>
             <address>
               121, Clear Water Bay Road<br />
@@ -104,7 +126,7 @@
               Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
             </address>
           </div>
-          <div>
+          <div class="col-12 col-sm-4">
             <div>
               <a href="http://google.com/+">Google+</a>
               <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
@@ -115,12 +137,16 @@
             </div>
           </div>
         </div>
-        <div>
-          <div>
+        <!-- end row 1 -->
+        <div class="row">
+          <!-- footer div > row 2/2 -->
+          <div class="col-auto">
             <p>© Copyright 2018 Ristorante Con Fusion</p>
           </div>
+          <!-- end row 2 -->
         </div>
       </div>
+      <!-- end container -- footer content -->
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
