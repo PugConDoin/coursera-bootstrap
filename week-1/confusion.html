@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Ristorante Con Fusion</title>
   </head>
 
@@ -22,7 +23,7 @@
       <!-- Bootstrap class for ourHero section -->
       <div class="container">
         <!-- Contain hero content inside fixed width container -->
-        <div class="row">
+        <div class="row row-header">
           <div class="col-12 col-sm-6">
             <!-- col-12 = entire width on xs screens // col-sm-6 = half-width on sm screens and above -->
             <h1>Ristorante con Fusion</h1>
@@ -43,7 +44,7 @@
 
     <div class="container">
       <!-- Bootsrap container with fixed width with 12 auto columns -->
-      <div class="row">
+      <div class="row row-content align-items-center">
         <!-- Row 1/3 in this div -->
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
           <!-- xs screens = full width, sm = 1/3 width, and md = 1/4 width -->
@@ -63,7 +64,8 @@
       </div>
       <!-- end row 1 -->
 
-      <div class="row">
+      <div class="row row-content align-items-center">
+        <!-- vertical center -->
         <!-- Row 2/3 in this div -->
         <div class="col-12 col-sm-4 col-md-3">
           <h3>This Month's Promotions</h3>
@@ -80,7 +82,7 @@
       </div>
       <!-- end row 2 -->
 
-      <div class="row">
+      <div class="row row-content align-items-center">
         <!-- Row 3/3 in this div -->
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
           <h3>Meet our Culinary Specialists</h3>
@@ -100,7 +102,7 @@
     </div>
     <!-- end container -- main content -->
 
-    <footer>
+    <footer class="footer">
       <div class="container">
         <!-- Bootsrap container with fixed width with 12 auto columns-->
         <div class="row">
@@ -108,7 +110,7 @@
           <div class="col-4 offset-1 col-sm-2">
             <!-- offset-1 uses the spare col in this row to offset the content by that 1 col, from xs screen size all the way up -->
             <h5>Links</h5>
-            <ul>
+            <ul class="list-unstyled">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Menu</a></li>
@@ -126,8 +128,10 @@
               Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
             </address>
           </div>
-          <div class="col-12 col-sm-4">
-            <div>
+          <div class="col-12 col-sm-4 align-self-center">
+            <!-- vertically center align the social links in the div -->
+            <div class="text-center">
+              <!-- horizontally center justify the cosial links -->
               <a href="http://google.com/+">Google+</a>
               <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
               <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -138,10 +142,11 @@
           </div>
         </div>
         <!-- end row 1 -->
-        <div class="row">
+        <div class="row justify-content-center">
+          <!-- horizontal center align the copyright paragraph  -->
           <!-- footer div > row 2/2 -->
           <div class="col-auto">
-            <p>© Copyright 2018 Ristorante Con Fusion</p>
+            <p class="copy">© Copyright 2018 Ristorante Con Fusion</p>
           </div>
           <!-- end row 2 -->
         </div>

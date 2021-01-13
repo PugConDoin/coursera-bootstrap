@@ -42,7 +42,7 @@
     <p>git --version</p>
     <p>Finish Git configuration with the following commands:</p>
     <p>git config --global user.name "Your Name"</p>
-    <p>git config --global user.email <your email address></p>
+    <p>git config --global user.email your "email address"</p>
     <p><p>Check configuration with:</p></p>
     <p>git config --list</p>
     
@@ -76,11 +76,43 @@
     </ul>
     <p>Key feautures and classes</p>
     <ul>
-      <li>Outer div with class="container" or class="container-fluid"</li>
-      <li>class="container-fluid"</li>
+      <li>Outer div with class="container" or,</li>
+      <li>class="container-fluid" for a responsive container with full device screen width</li>
       <li>Inner div with class="row" This will create a row with 12 equal Bootstrap columns</li>
     </ul>
+    <p>Setting Bootstrap Grid Column Classes and Corresponding Screen Sizes</p>
+    <ul>
+      <li>.col // extra small screen sizes below // column full width</li>
+      <li>.col-sm // small screen size 576px // max container width 540px</li>
+      <li>.col-md // screen size 768px // max container width 720px</li>
+      <li>.col-lg // screen size 992px // max container width 960px</li>
+      <li>.col-xl // screen size 1200px // max container width 1140px</li>
+    </ul>
 
-
+    <p>Specifying Layout Size and Alignment`</p>
+      <ul>
+        <li>use screen size specifier -sm, -md, etc to declare rules for those screen sizes</li>
+        <li>Append a numeric value from 1-12 to span the content by that many column widths</li>    
+        <li>.col-sm-5 // append -5 to -sm screen class for content that spans two coloumn widths on small screen size</li>
+        <p>Declare multiple classes to specify layout for alternative screen sizes, for example:</p>
+        <li>class="col-12 col-sm-6"</li>
+        <p>col-12 = entire width on xs screens // col-sm-6 = half-width on sm screens and above.</p>
+      </ul>
+      <p>Styling Links and Horizontal and Vertical alignmrnt</p>
+      <ul>
+        <p>Remove list text decoration</p>
+        <li>list-unstyled</li>
+        <p>Vertically align contents in the center</p>
+        <li>align-items-center</li>
+        <p>Horizontally align contents in the center div</p>
+        <li>justify-content-center</li>
+        <p>Justify text center</p>
+        <li>text-center</li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h2>Week 1 Assignment</h2>
+      <h3>Con Fusion Restaurant</h3>
+      <a href="./confusion.html">Project Web Page</a><p>Using Bootstrap 4 grid, components, classes and custom CSS classes.</p>
   </body>
 </html>
